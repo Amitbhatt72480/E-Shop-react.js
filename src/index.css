@@ -12,3 +12,4 @@ html{
 .btn{
 @apply bg-[#B2A4FF] text-black px-5 py-3 mt-10 ring-1 ring-purple-600 text-xl hover:bg-purple-400 hover:scale-110 duration-300 hover:ring-red-500 font-bold tracking-widest font-f2 rounded-xl
 }
+
