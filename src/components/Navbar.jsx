@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex items-center text-xl">
           <div className="flex mr-4 items-center bg-[#B2A4FF] hover:bg-purple-400 hover:scale-105 duration-150 ring-1 hover:ring-red-500 text-black rounded-3xl cursor-pointer">
-            <button className="pl-4 pr-2 py-2  font-semibold  tracking-wider ">Cart </button>
+            <Link to="/account"><button className="pl-4 pr-2 py-2  font-semibold  tracking-wider ">Account </button></Link>
             <FaOpencart size={30} className='mr-3 ' /> </div>
           <div className='flex items-center bg-[#B2A4FF] hover:bg-purple-400 hover:scale-105 duration-150 ring-1 hover:ring-red-500 text-black rounded-3xl cursor-pointer'>
          {user ? <button onClick={handleLogout} className='pl-4 pr-2 py-2 font-semibold  tracking-wider '>LogOut</button> : <Link to="/signup"><button className="pl-4 pr-2 py-2 font-semibold  tracking-wider ">Sign Up</button></Link>}
@@ -62,7 +62,7 @@ const Navbar = () => {
           <h1 className="border-b border-gray-200 w-[85%] py-2 px-4 rounded-3xl font-semibold tracking-widest ">Products</h1>
         </div>
         <div className="flex items-center text-xl p-5">
-          <div className="flex w-[40%] mr-4 items-center bg-gradient-to-r from-blue-500 via-teal-500 to-cyan-500 rounded-3xl cursor-pointer"><button className="pl-4 pr-2 py-2  font-semibold  tracking-wider ">Cart </button><FaOpencart size={30} className='mr-3 ' /> </div>
+          <div className="flex w-[40%] mr-4 items-center bg-gradient-to-r from-blue-500 via-teal-500 to-cyan-500 rounded-3xl cursor-pointer"><Link to="/account"><button className="pl-4 pr-2 py-2  font-semibold  tracking-wider ">Account </button></Link> <FaOpencart size={30} className='mr-3 ' /></div>
           <div className='flex w-[40%] items-center bg-gradient-to-r from-blue-500 via-teal-500 to-cyan-500 rounded-3xl cursor-pointer'>
           {user ? <button onClick={handleLogout} className='pl-4 pr-2 py-2 font-semibold  tracking-wider '>LogOut</button> : <Link to='/signup'><button  className="pl-4 pr-2 py-2 font-semibold  tracking-wider ">Sign Up</button></Link>}
             <BiUser className=' mr-3' /></div>

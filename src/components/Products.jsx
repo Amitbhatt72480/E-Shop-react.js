@@ -56,7 +56,7 @@ const Products = () => {
 				</div>
 				<div className="lg:col-span-3 lg:grid lg:grid-cols-3">
 					{allproducts.map((item) => {
-						return <SingleProd key={item.id} id={item.id} title={item.title} image={item.image} desc={item.description} price={item.price} />
+						return <SingleProd key={item.id} id={item.id} title={item.title} image={item.image} desc={item.description} price={item.price} category={item.category}/>
 					})}
 				</div>
 			</div>
