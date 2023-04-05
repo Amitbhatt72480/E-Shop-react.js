@@ -10,6 +10,7 @@ const Products = () => {
 
 	const [allproducts, setAllProducts] = useState([])
 	const [temp, setTemp] = useState([])
+
 	useEffect(() => {
 		axios.get('https://fakestoreapi.com/products').then(response => {
 			setAllProducts(response.data.concat(data))
